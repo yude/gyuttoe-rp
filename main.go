@@ -21,10 +21,10 @@ func main() {
 	// HIKAKIN & SEIKIN - 今
 	now := time.Now()
 	// Discord の App ID を .env から読み込む
-	DISCORD_APP_ID := os.Getenv("DISCORD_APP_ID")
+	DiscordAppID := os.Getenv("DISCORD_APP_ID")
 
 	// Discord にログインする
-	err = client.Login("DISCORD_APP_ID")
+	err = client.Login(DiscordAppID)
 	if err != nil {
 		panic(err)
 	}
