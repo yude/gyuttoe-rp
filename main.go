@@ -3,7 +3,6 @@ package main
 import (
 	// base
 
-	"os"
 	"time"
 
 	// Discord Rich Presence Library
@@ -18,7 +17,7 @@ import (
 func main() {
 	// Define required variables
 	now := time.Now()
-	DiscordAppID := os.Getenv("770195570173804575")
+	DiscordAppID := "770195570173804575"
 
 	// Login to Discord
 	errLogin := client.Login(DiscordAppID)
