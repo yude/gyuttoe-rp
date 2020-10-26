@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// .env ファイルを読み込む (Discord の App ID 用)
-	err := godotenv.Load(fmt.Sprintf("../%s.env", os.Getenv("GO_ENV")))
+	err := godotenv.Load(fmt.Sprintf("%s.env", os.Getenv("GO_ENV")))
 	if err != nil {
 		panic(err)
 	}
@@ -21,16 +21,16 @@ func main() {
 	// HIKAKIN & SEIKIN - 今
 	now := time.Now()
 	// Discord の App ID を .env から読み込む
-	DiscordAppID := os.Getenv("DISCORD_APP_ID")
+	// DiscordAppID := os.Getenv("DISCORD_APP_ID")
 
 	// Discord にログインする
-	err = client.Login(DiscordAppID)
-	if err != nil {
-		panic(err)
+	errLogin := client.Login("770195570173804575")
+	if errLogin != nil {
+		panic(errLogin)
 	}
 
 	// Rich Presence を表示する
-	err = client.SetActivity(client.Activity{
+	errRP := client.SetActivity(client.Activity{
 		State:      "Playing",
 		Details:    lesson,
 		LargeImage: "e",
@@ -40,7 +40,10 @@ func main() {
 		},
 	})
 
-	if err != nil {
-		panic(err)
+	if errRP != nil {
+		panic(errRP)
 	}
+
+	fmt.Println("Sleeping...")
+	time.Sleep(time.Second * 10)
 }
