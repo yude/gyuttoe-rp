@@ -25,7 +25,7 @@ go get fyne.io/fyne/widget
 ```
 
 ### For packaging
-* For decrease file size of executable:  
+* For decreasing file size of executable:  
 [UPX - the Ultimate Packer for eXecutables](https://upx.github.io/)
 
 ## License
