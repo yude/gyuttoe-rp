@@ -8,10 +8,11 @@ import (
 
 	// Discord Rich Presence Library
 	"github.com/hugolgst/rich-go/client"
+
 	// Load .env file
 	"github.com/joho/godotenv"
-	// GUI library "Fyne"
 
+	// GUI library "Fyne"
 	"fyne.io/fyne"
 	"fyne.io/fyne/app"
 	"fyne.io/fyne/widget"
