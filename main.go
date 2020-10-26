@@ -2,15 +2,12 @@ package main
 
 import (
 	// base
-	"fmt"
+
 	"os"
 	"time"
 
 	// Discord Rich Presence Library
 	"github.com/hugolgst/rich-go/client"
-
-	// Load .env file
-	"github.com/joho/godotenv"
 
 	// GUI library "Fyne"
 	"fyne.io/fyne"
@@ -19,15 +16,9 @@ import (
 )
 
 func main() {
-	// Load .env file (Discord Application ID)
-	err := godotenv.Load(fmt.Sprintf("%s.env", os.Getenv("GO_ENV")))
-	if err != nil {
-		panic(err)
-	}
-
 	// Define required variables
 	now := time.Now()
-	DiscordAppID := os.Getenv("DISCORD_APP_ID")
+	DiscordAppID := os.Getenv("770195570173804575")
 
 	// Login to Discord
 	errLogin := client.Login(DiscordAppID)

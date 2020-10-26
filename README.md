@@ -17,10 +17,6 @@ Discord Rich Presence front of e-learning system called "Gyutto-e". (Semi-automa
 ```
 go get github.com/hugolgst/rich-go
 ```
-* [joho/godotenv](https://github.com/joho/godotenv)
-```
-go get github.com/joho/godotenv
-```
 * [Fyne - Cross platform GUI in Go based on Material Design](https://github.com/fyne-io/fyne)
 ```
 go get fyne.io/fyne
