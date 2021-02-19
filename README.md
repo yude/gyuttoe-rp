@@ -1,4 +1,4 @@
-# [yudete](https://github.com/yudete) / gyuttoe-rp
+# gyuttoe-rp
 eラーニングシステム「ぎゅっとe」Discord Rich Presence (半自動)  
 ## For English:
 Discord Rich Presence front of e-learning system called "Gyutto-e". (Semi-automatic)
